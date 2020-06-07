@@ -12,4 +12,10 @@ public class BishopBlackTest {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
         assertEquals(bishopBlack.position(), (Cell.C8));
     }
+
+    @Test
+    public void blackBishopCopyTest() {
+        BishopBlack bishopBlack = new BishopBlack(Cell.C8);
+        assertEquals(bishopBlack.copy(Cell.A6).position(), (Cell.A6) );
+    }
 }
