@@ -21,7 +21,7 @@ public class BishopBlackTest {
 
     @Test
     public void blackBishopWayTest() {
-        BishopBlack bishopBlack = new BishopBlack(Cell.C8);
-        assertEquals(bishopBlack.way(Cell.C8, Cell.G4), new Cell[] {Cell.D7, Cell.E6, Cell.F5, Cell.G4});
+        BishopBlack bishopBlack = new BishopBlack(Cell.C1);
+        assertEquals(bishopBlack.way(Cell.C1, Cell.G5), new Cell[] {Cell.D2, Cell.E3, Cell.F4, Cell.G5});
     }
 }

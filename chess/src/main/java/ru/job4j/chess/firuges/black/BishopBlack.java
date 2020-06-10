@@ -23,15 +23,14 @@ public class BishopBlack implements Figure {
             throw new IllegalStateException(
                     String.format("Could not way by diagonal from %s to %s", source, dest));
         }
-        Cell[] cells = new Cell[7];
-        int i = 0;
-        if(source.x < dest.x || source.y < dest.y) {
-            while(source.x < dest.x) {
-                cells[i] = Cell.findBy(source.x + 1, source.y + 1);
-                i++;
-            }
+        int size = ;
+        Cell[] steps = new Cell[size];
+        int deltaX = 1;
+        int deltaY = 1;
+        for (int index = 0; index < size; index++) {
+            steps[index] = Cell.findBy(source.x + deltaX, source.y + deltaY);
         }
-        return cells;
+        return steps;
     }
 
     public boolean isDiagonal(Cell source, Cell dest) {
